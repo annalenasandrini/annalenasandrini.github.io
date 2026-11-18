@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+.micro-5-charted-regular {
+  font-family: "Micro 5 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg: #94d63d;        /* page background */
+  --card: #c2f890;      /* section background */
+  --text: #330606;
+  --accent: #fffd77;    /* links and highlights */
+}
+
+header {
+  background: var(--card);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(58, 24, 78, 0.08);
+}
+
+header {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem 2rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+header, main, footer {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}  
+
+.visuals {
+display: flexbox;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#visuals img {
+  width: 400px;
+}
+
+.pictures {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.pictures img {
+  height: 300px;
+  width: auto;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+nav a img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.projects {
+
+ font-family: "Micro 5 Charted", sans-serif;
+  font-weight: 400;
+}
+
+.yarngallery {
+
+ font-family: "Micro 5 Charted", sans-serif;
+  font-weight: 400;
+}
+
+.footer {
+display: flex;#
+align-items: center;
+
+}
