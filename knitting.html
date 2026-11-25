@@ -25,7 +25,7 @@
     </header>
 
     <main>
-
+      <section>
     <div class="projects">
         <section id="projects">
           <h2>my projects</h2>
@@ -156,15 +156,33 @@
     </div>
   </div>
 </div>
-       
+       </section>
 
+      
+       <section>
     <div class="yarngallery">
         <section id="yarngallery">
           <h2>my yarns</h2>
           
         </section>
       </div>
+      <div class="yarngallery">
+      
+         <div id="card01" class="card" data-category="yarn">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="wollerosa.png" alt="pink ball of yarn" />
+    </div>
+    <div class="card-back">
+      <p>Lana Grossa</p>
+      <a href="https://www.lana-grossa.de/en/yarns/detail/cool-wool-big/641/" target="_blank" rel="noopener noreferrer">Cool Wool Big in 1031</a>
+    </div>
+  </div>
+</div>
+      
 
+      </div>
+</section>
       </main>
 
        <footer>
@@ -199,7 +217,7 @@
             }
           });
         }
-        
+
         cards.forEach(function (card) {
   card.addEventListener("click", function (event) {
     if (event.target.closest("a")) return;

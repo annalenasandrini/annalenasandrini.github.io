@@ -8,10 +8,13 @@
 }
 
 :root {
-  --bg: #cce2ff;        /* page background */
-  --card: #e7e696;      /* section background */
-  --text: #3b0909;
-  --accent: #9a4ef1;    /* links and highlights */
+  --bg: #3e7053;        /* page background */
+  --card: #214430;      /* section background */
+  --knit-card: #ffd6e0;   /* Vorderseite*/
+  --knit-card-back: #bebea2; /*Rückseite */
+  --text: #dacccc;
+  --accent: #c7aae7;    /* links and highlights */
+  
 }
 
 header, main, footer {
@@ -109,6 +112,13 @@ img {
   padding: 1rem;
 }
 
+.yarngallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
 .card {
   position: relative;
   perspective: 800px;
@@ -143,13 +153,14 @@ img {
   grid-area: 1 / 1;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  background: var(--card);
+  background: var(--knit-card);
   padding: 0.75rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-back {
+   background: var(--knit-card-back);
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -159,6 +170,13 @@ img {
 }
 
 .gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.yarngallery img {
   width: 100%;
   height: auto;
   display: block;
