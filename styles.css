@@ -8,10 +8,10 @@
 }
 
 :root {
-  --bg: #94d63d;        /* page background */
-  --card: #c2f890;      /* section background */
+  --bg: #e7dca8;        /* page background */
+  --card: #fffc54;      /* section background */
   --text: #330606;
-  --accent: #fffd77;    /* links and highlights */
+  --accent: #f1d64e;    /* links and highlights */
 }
 
 header {
@@ -101,6 +101,13 @@ img {
   scroll-snap-align: start;
 }
 
+.gallery img {
+  height: 300px;
+  width: auto;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
 nav a img {
   width: 24px;
   height: 24px;
@@ -119,8 +126,9 @@ nav a img {
   font-weight: 400;
 }
 
-.footer {
-display: flex;#
-align-items: center;
-
+.footstuff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
 }

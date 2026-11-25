@@ -18,12 +18,123 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#websites">Websites</a></li>
           <li><a href="index.html#visuals">Visuals</a></li>
-          <li><a href="projects.html">Knitting</a></li>
+          <li><a href="knitting.html">Knitting</a></li>
         </ul>
       </nav>
 
     </header>
+    <div class="projects">
+        <section id="projects">
+          <h2>picture gallery of my finished and unfinished projects</h2>
+          
+        </section>
+      </div>
+    <button onclick="filterItems('all')">All</button>
+ 
+    <button onclick="filterItems('knits')">knits</button>
+ 
+    <button onclick="filterItems('crochet')">crochet</button>
 
+    <button onclick="filterItems('yarn')">yarn</button>
+ 
+    <div class="gallery">
+
+      <div id="card1" class="card" data-category="knits">current WIP 
+        <img src="aktuell.png" alt="beanie on knitting needles" /></div>
+ 
+      <div id="card2" class="card" data-category="knits">current WIP reversed
+         <img src="aktuellreverse.png" alt="same beanie on knitting needles, but inside out" /></div>
+ 
+      <div id="card3" class="card" data-category="knits">crochet cardi
+         <img src="cardi.png" alt="green cardigan with dark lilac contrast stitching"/></div>
+
+      <div id="card4" class="card" data-category="knits">sophie scarf #2 
+        <img src="sophie.png" alt="yellow sophie scarf" /> </div>
+
+      <div id="card5" class="card" data-category="knits"> beanie 
+        <img src="miromuetze.png" alt="brown and beige beanie with yellow eye design"/></div>
+
+      <div id="card6" class="card" data-category="knits">striped shirt
+        <img src="stripedshirt.png" alt="orange and brown tshirt raglan knit" /></div>
+
+      <div id="card7" class="card" data-category="knits">balaclava
+        <img src="balaclava.png" alt="forest green balaclava with beige icord drawstring" /></div>
+
+      <div id="card8" class="card" data-category="crochet">blue bag
+        <img src="tasche.png" alt="light and dark blue crochet bag" /></div>
+
+      <div id="card9" class="card" data-category="crochet">asymmetrical tank top
+        <img src="pooltank.png" alt="light and dark blue crochet top" /></div>
+    </div>
+        <script>
+      const cards = document.querySelectorAll(".card");
+ 
+      function filterItems(category) {
+        let card1 = document.getElementById("card1");
+        let card2 = document.getElementById("card2");
+        let card3 = document.getElementById("card3");
+        let card4 = document.getElementById("card4");
+        let card5 = document.getElementById("card5");
+        let card6 = document.getElementById("card6");
+        let card7 = document.getElementById("card7");
+        let card8 = document.getElementById("card8");
+        let card9 = document.getElementById("card9");
+ 
+ 
+        if (category === "all" || category === card1.dataset.category) {
+          card1.style.display = "";
+        } else {
+          card1.style.display = "none";
+        }
+ 
+        if (category === "all" || category === card2.dataset.category) {
+          card2.style.display = "";
+        } else {
+          card2.style.display = "none";
+        }
+ 
+        if (category === "all" || category === card3.dataset.category) {
+          card3.style.display = "";
+        } else {
+          card3.style.display = "none";
+        }
+
+        if (category === "all" || category === card4.dataset.category) {
+          card4.style.display = "";
+        } else {
+          card4.style.display = "none";
+        }
+
+        if (category === "all" || category === card5.dataset.category) {
+          card5.style.display = "";
+        } else {
+          card5.style.display = "none";
+        }
+
+        if (category === "all" || category === card6.dataset.category) {
+          card6.style.display = "";
+        } else {
+          card6.style.display = "none";
+        }
+
+        if (category === "all" || category === card7.dataset.category) {
+          card7.style.display = "";
+        } else {
+          card7.style.display = "none";
+        }
+
+        if (category === "all" || category === card8.dataset.category) {
+          card8.style.display = "";
+        } else {
+          card8.style.display = "none";
+        }
+        if (category === "all" || category === card9.dataset.category) {
+          card9.style.display = "";
+        } else {
+          card9.style.display = "none";
+        }
+      }
+    </script>
     <div class="yarngallery">
         <section id="gallery">
           <h2>picture gallery of my used and unused yarns with links to websites</h2>
@@ -31,11 +142,6 @@
         </section>
       </div>
 
-       <div class="projects">
-        <section id="projects">
-          <h2>picture gallery of my finished and unfinished projects</h2>
-          
-        </section>
-      </div>
+      
   </body>
 </html>
